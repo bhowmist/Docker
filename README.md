@@ -35,7 +35,7 @@ e.g: http://localhost:8080/text?data=I am from Cincinnati, OH,45220. I am from U
 
 -> Different stats from the text will pop up on the web page
 
-Docker Notes to run the container:
+Docker notes to run the container:
 ---------------------------------
 1. $gzip -d text_stat.tar.tz
 
