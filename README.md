@@ -35,4 +35,17 @@ e.g: http://localhost:8080/text?data=I am from Cincinnati, OH,45220. I am from U
 
 -> Different stats from the text will pop up on the web page
 
+Docker Notes to run the container:
+---------------------------------
+1. $gzip -d text_stat.tar.tz
+
+2. $docker import text_stat.tar
+
+3. Run /startme.sh in the docker container to start the web server.
+
+   e.g: $docker run -d -p 8080:8080 text_stat ./startme.sh
+
+   This will start the container, the webserver, and forward traffic on your port 8080 into the container.
+
+
 
